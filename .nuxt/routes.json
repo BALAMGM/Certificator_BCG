@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Form",
+    "path": "/Form",
+    "component": "/home/lokimenethill/Escritorio/Seguridad/Certificator_BCG/pages/Form.vue",
+    "chunkName": "pages/Form",
+    "_name": "_45dce4e2"
+  },
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "/home/lokimenethill/Escritorio/Seguridad/Certificator_BCG/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_60d5e34c"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/lokimenethill/Escritorio/Seguridad/Certificator_BCG/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_64edcbc4"
+  }
+]
