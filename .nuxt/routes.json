@@ -2,22 +2,22 @@
   {
     "name": "Form",
     "path": "/Form",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/Form.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/Form.vue",
     "chunkName": "pages/Form",
-    "_name": "_63af92ac"
+    "_name": "_391cde0a"
   },
   {
     "name": "inspire",
     "path": "/inspire",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/inspire.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/inspire.vue",
     "chunkName": "pages/inspire",
-    "_name": "_15d7dc84"
+    "_name": "_38fd1493"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/index.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_33e69a08"
+    "_name": "_79eea2cb"
   }
 ]

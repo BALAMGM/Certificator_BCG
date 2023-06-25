@@ -1,38 +1,35 @@
 <template>
     <div>
-      <v-text-field clearable label="Contraseña" type="password"></v-text-field>
-      <h3>Llave generada:</h3>
+      <v-text-field clearable label="Contraseña" :type="tipo" :v-model="pass" ></v-text-field> 
+      <v-btn @click="verpass()"  variant="outlined">
+  ver
+</v-btn>
+<v-select
+          :items="sizes"
+          label="Tamaño de llave"
+          v-model="SSelect"
+        ></v-select>
+        <div v-show="showkP" >
+
+        
+      <h3>Generar llaves :</h3>
         <p>
           {{ this.kp }}
         </p>
-        <v-btn @click="crearLlave()"  variant="outlined">
-  Crear llaves
+        <v-btn @click="crearLlave()" variant="outlined">
+  Generar llave privada
 </v-btn>
-<v-btn @click="usar()" variant="outlined">
-  Usar ->
+        <v-btn @click="usar()"  variant="outlined">
+  Generar llaver publica
 </v-btn>
 
-<div v-show="showPButton" >
-  <v-btn @click="mostrarPriv()" variant="outlined">
-  Mostrar privada
-</v-btn>
-</div>
-
-<h3>Llave publica usada:</h3>
-<p>
-  {{ this.kpU }}
-</p>
-<div v-show="showkP" >
-<h3>Llave privada usada:</h3>
-<p>
-  {{ this.kPriU }}
-</p>
 </div>
     </div>
     
   </template>
     <script>
-    const NodeRSA = require('node-rsa');
+    import axios from "axios";
+    import { SHA3 } from 'sha3';
     export default {
       data() {
         return {
@@ -40,58 +37,125 @@
             kpU:"",
             kPri:"",
             kPriU:"",
+            pass:"",
             showkP:false,
             showPButton:false,
+            tipo:"password",
+            sizes: [2048, 3072, 4096 ],
+            SSelect:"",
+            user: 0,
         };
+      },
+      created: function(){
+        let today = new Date();
+        let min = Math.ceil(105610680);
+        let max = Math.floor(654106598470506);
+        let r = Math.floor(Math.random() * (max - min) + min);
+        const hash = new SHA3(512);
+
+        hash.update(r.toString());
+        let d = hash.digest('hex');
+        console.log(d)
+        console.log(today.getHours()*today.getMinutes()*today.getSeconds()+today.getMilliseconds()+r)
+
+        this.user = r
       },
       methods: {
         crearLlave() {
-          let getPrimes = (min, max) => {
-  let result = Array(max + 1)
-    .fill(0)
-    .map((_, i) => i);
-  for (let i = 2; i <= Math.sqrt(max + 1); i++) {
-    for (let j = i ** 2; j < max + 1; j += i) delete result[j];
-  }
-  return Object.values(result.slice(Math.max(min, 2)));
-};
+          axios({
+    url: 'http://127.0.0.1:7000/privada', //your url
+    method: 'POST',
+    data:{
+    id: this.user.toString(),
+    keyS: this.SSelect,
+    pass: this.pass},
+    responseType: 'blob', // important
+}).then((response) => {
+    // create file link in browser's memory
+    const href = URL.createObjectURL(response.data);
 
-let getRandNum = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
+    // create "a" HTML element with href to file & click
+    const link = document.createElement('a');
+    link.href = href;
+    link.setAttribute('download', 'llave.key'); //or any other extension
+    document.body.appendChild(link);
+    link.click();
 
-let getRandPrime = (min, max) => {
-  let primes = getPrimes(min, max);
-  return primes[getRandNum(0, primes.length - 1)];
-};
-let primo = getRandPrime(10000, 10000000)
-// Example
-//console.log(getRandPrime(10000, 10000000));
-          let key = new NodeRSA().generateKeyPair(3072,primo)
+    // clean up "a" element & remove ObjectURL
+    document.body.removeChild(link);
+    URL.revokeObjectURL(href);
+});
+/*
 
-        let publicKey = key.exportKey("public");
-        let privateKey = key.exportKey("private");
-        /*
-            const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let result1= ' ';
-    const charactersLength = characters.length;
-    for ( let i = 0; i < 128; i++ ) {
-        result1 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
+          axios.post("http://127.0.0.1:7000/privada",{
+    id: '123123',
+    keyS: '2084',
+    pass: '123123',
+  }).then((result) => {
+      console.log(result.data);
+    });
     */
-            this.kp = publicKey
-            this.kPri = privateKey
-            this.showPButton =true
-
         },
         usar(){
-            this.kpU=this.kp
-            this.kPriU = this.kPri
+
+          axios({
+    url: 'http://127.0.0.1:7000/publica', //your url
+    method: 'POST',
+    data:{
+    id: this.user.toString(),
+    keyS: this.SSelect,
+    pass: this.pass},
+    responseType: 'blob', // important
+}).then((response) => {
+    // create file link in browser's memory
+    const href = URL.createObjectURL(response.data);
+
+    // create "a" HTML element with href to file & click
+    const link = document.createElement('a');
+    link.href = href;
+    link.setAttribute('download', 'certificado.cert'); //or any other extension
+    document.body.appendChild(link);
+    link.click();
+
+    // clean up "a" element & remove ObjectURL
+    document.body.removeChild(link);
+    URL.revokeObjectURL(href);
+});
+
+    /*
+      axios.post('http://127.0.0.1:7000/test', {
+    id: 'test',
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });*/
+
         },
         mostrarPriv(){
           this.showkP = true
-        }
+        },
+        descargar(){
+       
       },
+      verpass(){
+        if(this.tipo=="password"){
+          this.tipo = "text"
+        }else{
+          this.tipo = "password"
+        }
+      }
+      },
+      watch: {
+      SSelect(){
+      if(this.SSelect!=""){
+        this.showkP = true
+      }
+    }
+  }
+      
     };
     </script>
   <style>
