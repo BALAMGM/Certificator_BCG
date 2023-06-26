@@ -9,4 +9,5 @@ You can directly use them in pages and other components without the need to impo
 - `<FormCert>` | `<form-cert>` (components/FormCert.vue)
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
+- `<ValidarForm>` | `<validar-form>` (components/ValidarForm.vue)
 - `<VuetifyLogo>` | `<vuetify-logo>` (components/VuetifyLogo.vue)

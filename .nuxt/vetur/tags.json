@@ -8,6 +8,9 @@
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
   },
+  "ValidarForm": {
+    "description": "Auto imported from components/ValidarForm.vue"
+  },
   "VuetifyLogo": {
     "description": "Auto imported from components/VuetifyLogo.vue"
   }

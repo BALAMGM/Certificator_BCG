@@ -86,6 +86,11 @@ export default {
           title: 'Crear certificado',
           to: '/form',
         },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Validar Certificado',
+          to: '/valform',
+        },
       ],
       miniVariant: false,
       right: true,

@@ -3,21 +3,24 @@
     "name": "Form",
     "path": "/Form",
     "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/Form.vue",
-    "chunkName": "pages/Form",
-    "_name": "_391cde0a"
+    "chunkName": "pages/Form"
   },
   {
     "name": "inspire",
     "path": "/inspire",
     "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_38fd1493"
+    "chunkName": "pages/inspire"
+  },
+  {
+    "name": "ValForm",
+    "path": "/ValForm",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/ValForm.vue",
+    "chunkName": "pages/ValForm"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_79eea2cb"
+    "chunkName": "pages/index"
   }
 ]

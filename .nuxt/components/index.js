@@ -1,6 +1,7 @@
 export { default as FormCert } from '../../components/FormCert.vue'
 export { default as NuxtLogo } from '../../components/NuxtLogo.vue'
 export { default as Tutorial } from '../../components/Tutorial.vue'
+export { default as ValidarForm } from '../../components/ValidarForm.vue'
 export { default as VuetifyLogo } from '../../components/VuetifyLogo.vue'
 
 // nuxt/nuxt.js#8607
