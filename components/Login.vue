@@ -14,7 +14,9 @@
         <v-text-field 
           clearable label="Passwords" :type="tipo" v-model="pass" >
         </v-text-field>
-        <v-btn @click="verpass()"  variant="outlined">
+        <v-btn 
+        @click="verpass()" 
+         variant="outlined">
           ver
         </v-btn>
 
@@ -24,7 +26,6 @@
             color="success"
             class="mt-4"
             block
-            @click="validate"
           >
             LOGIN
           </v-btn>
@@ -44,9 +45,9 @@
       data() {
         return {
             devmode:false,
-
+            email:"",
             tipo:"password",
-
+            pass:"",
 
             name: '',
             nameRules: [
