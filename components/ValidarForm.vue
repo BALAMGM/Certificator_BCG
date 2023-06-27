@@ -1,6 +1,14 @@
 <template>
     <div>
         <h1>Validar certificado</h1>
+        
+        <form @submit.prevent="Cargar()" enctype="multipart/form-data">
+          <v-file-input clearable label="Certificado"></v-file-input>
+
+          <v-btn @click="Cargar()" variant="outlined"> Enviar </v-btn>
+        </form>
+
+        
      
     
 </div>
@@ -18,29 +26,14 @@
         
       },
       methods: {
-        descargar(){
-          axios({
-    url: 'http://127.0.0.1:7000/test', //your url
-    method: 'POST',
-    data:{
-    id: this.user.toString(),
-    keyS: this.SSelect,
-    pass: this.pass,
-    shaS: this.shaS,
-    AesS:this.AesS,
-    c:this.c,
-    st:this.st,
-    l:this.l,
-    o:this.o,
-    ou:this.ou,
-    cn:this.cn,
-    dias: this.dias,
+        Cargar(){
+          const formdata = new FormData();
+          formdata.append('file', this.fichero);
 
-  },
-    //responseType: 'blob', // important
-}).then((response) => {
-});
-      },
+          axios.post('http://127.0.0.1:7000/valida', form, {headers: { 'Content-Type': 'multipart/form-data' }}).then(response => {
+            console.log(response.data);
+          });
+        }
       },
       
       
