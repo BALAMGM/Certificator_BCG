@@ -2,25 +2,43 @@
   {
     "name": "Form",
     "path": "/Form",
-    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/Form.vue",
-    "chunkName": "pages/Form"
+    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/Form.vue",
+    "chunkName": "pages/Form",
+    "_name": "_009c405a"
   },
   {
     "name": "inspire",
     "path": "/inspire",
-    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/inspire.vue",
-    "chunkName": "pages/inspire"
+    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_4ed7928a"
+  },
+  {
+    "name": "LoginForm",
+    "path": "/LoginForm",
+    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/LoginForm.vue",
+    "chunkName": "pages/LoginForm",
+    "_name": "_24e73064"
+  },
+  {
+    "name": "RegistroForm",
+    "path": "/RegistroForm",
+    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/RegistroForm.vue",
+    "chunkName": "pages/RegistroForm",
+    "_name": "_28682a26"
   },
   {
     "name": "ValForm",
     "path": "/ValForm",
-    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/ValForm.vue",
-    "chunkName": "pages/ValForm"
+    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/ValForm.vue",
+    "chunkName": "pages/ValForm",
+    "_name": "_ee342474"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_348fa21a"
   }
 ]

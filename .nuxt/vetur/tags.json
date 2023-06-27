@@ -2,8 +2,14 @@
   "FormCert": {
     "description": "Auto imported from components/FormCert.vue"
   },
+  "Login": {
+    "description": "Auto imported from components/Login.vue"
+  },
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Registro": {
+    "description": "Auto imported from components/Registro.vue"
   },
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"

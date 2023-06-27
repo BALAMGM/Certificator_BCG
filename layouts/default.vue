@@ -91,6 +91,16 @@ export default {
           title: 'Validar Certificado',
           to: '/valform',
         },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Registrar Usuario',
+          to: '/RegistroForm',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Login',
+          to: '/LoginForm',
+        },
       ],
       miniVariant: false,
       right: true,
