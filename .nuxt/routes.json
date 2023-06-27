@@ -2,43 +2,43 @@
   {
     "name": "Form",
     "path": "/Form",
-    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/Form.vue",
+    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/Form.vue",
     "chunkName": "pages/Form",
-    "_name": "_009c405a"
+    "_name": "_63af92ac"
   },
   {
     "name": "inspire",
     "path": "/inspire",
-    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/inspire.vue",
+    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/inspire.vue",
     "chunkName": "pages/inspire",
-    "_name": "_4ed7928a"
+    "_name": "_15d7dc84"
   },
   {
     "name": "LoginForm",
     "path": "/LoginForm",
-    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/LoginForm.vue",
+    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/LoginForm.vue",
     "chunkName": "pages/LoginForm",
-    "_name": "_24e73064"
+    "_name": "_2f048152"
   },
   {
     "name": "RegistroForm",
     "path": "/RegistroForm",
-    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/RegistroForm.vue",
+    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/RegistroForm.vue",
     "chunkName": "pages/RegistroForm",
-    "_name": "_28682a26"
+    "_name": "_b8bc8c06"
   },
   {
     "name": "ValForm",
     "path": "/ValForm",
-    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/ValForm.vue",
+    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/ValForm.vue",
     "chunkName": "pages/ValForm",
-    "_name": "_ee342474"
+    "_name": "_73acd8e2"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/b/Documentos/Seguridad/Certificator_BCG/pages/index.vue",
+    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_348fa21a"
+    "_name": "_33e69a08"
   }
 ]

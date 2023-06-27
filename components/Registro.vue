@@ -62,7 +62,6 @@
             color="success"
             class="mt-4"
             block
-            @click="validate"
           >
             REGISTRAR
           </v-btn>
@@ -82,7 +81,7 @@
       data() {
         return {
             devmode:false,
-
+            email:"",
             c:"",
             st:"",
             l:"",

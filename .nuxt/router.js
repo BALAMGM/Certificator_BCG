@@ -4,12 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _009c405a = () => interopDefault(import('../pages/Form.vue' /* webpackChunkName: "pages/Form" */))
-const _4ed7928a = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _24e73064 = () => interopDefault(import('../pages/LoginForm.vue' /* webpackChunkName: "pages/LoginForm" */))
-const _28682a26 = () => interopDefault(import('../pages/RegistroForm.vue' /* webpackChunkName: "pages/RegistroForm" */))
-const _ee342474 = () => interopDefault(import('../pages/ValForm.vue' /* webpackChunkName: "pages/ValForm" */))
-const _348fa21a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _63af92ac = () => interopDefault(import('../pages/Form.vue' /* webpackChunkName: "pages/Form" */))
+const _15d7dc84 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
+const _2f048152 = () => interopDefault(import('../pages/LoginForm.vue' /* webpackChunkName: "pages/LoginForm" */))
+const _b8bc8c06 = () => interopDefault(import('../pages/RegistroForm.vue' /* webpackChunkName: "pages/RegistroForm" */))
+const _73acd8e2 = () => interopDefault(import('../pages/ValForm.vue' /* webpackChunkName: "pages/ValForm" */))
+const _33e69a08 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -24,27 +24,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/Form",
-    component: _009c405a,
+    component: _63af92ac,
     name: "Form"
   }, {
     path: "/inspire",
-    component: _4ed7928a,
+    component: _15d7dc84,
     name: "inspire"
   }, {
     path: "/LoginForm",
-    component: _24e73064,
+    component: _2f048152,
     name: "LoginForm"
   }, {
     path: "/RegistroForm",
-    component: _28682a26,
+    component: _b8bc8c06,
     name: "RegistroForm"
   }, {
     path: "/ValForm",
-    component: _ee342474,
+    component: _73acd8e2,
     name: "ValForm"
   }, {
     path: "/",
-    component: _348fa21a,
+    component: _33e69a08,
     name: "index"
   }],
 
