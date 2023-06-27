@@ -89,7 +89,7 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'Validar Certificado',
-          to: '/valform',
+          to: '/ValidarForm',
         },
         {
           icon: 'mdi-chart-bubble',
@@ -100,6 +100,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Login',
           to: '/LoginForm',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Firmar',
+          to: '/FirmarForm',
         },
       ],
       miniVariant: false,

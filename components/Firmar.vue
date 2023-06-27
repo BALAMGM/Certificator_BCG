@@ -1,17 +1,17 @@
 <template>
   <div>
-      <h1>Validar certificado</h1>
+      <h1>Firmar certificado</h1>
       
       <form @submit.prevent="Cargar()" enctype="multipart/form-data">
         <v-file-input
                 accept=".pem"
-                label="Click here to select a .pem file"
+                label="Click aqui para seleccionar archivo a firmar"
                 filled
                 v-model="chosenFile"
               >
               </v-file-input>
 
-        <v-btn right @click="importTxt">Read File </v-btn>
+        <v-btn right @click="importTxt">Firmar Archivo</v-btn>
       </form>
 
       {{ datas }}
