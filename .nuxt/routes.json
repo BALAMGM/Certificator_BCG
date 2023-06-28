@@ -1,5 +1,12 @@
 [
   {
+    "name": "FirmarForm",
+    "path": "/FirmarForm",
+    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/FirmarForm.vue",
+    "chunkName": "pages/FirmarForm",
+    "_name": "_6962178e"
+  },
+  {
     "name": "Form",
     "path": "/Form",
     "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/Form.vue",
@@ -28,11 +35,11 @@
     "_name": "_b8bc8c06"
   },
   {
-    "name": "ValForm",
-    "path": "/ValForm",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/ValForm.vue",
-    "chunkName": "pages/ValForm",
-    "_name": "_73acd8e2"
+    "name": "ValidarForm",
+    "path": "/ValidarForm",
+    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/ValidarForm.vue",
+    "chunkName": "pages/ValidarForm",
+    "_name": "_432c449b"
   },
   {
     "name": "index",

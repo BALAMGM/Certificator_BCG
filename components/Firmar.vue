@@ -13,9 +13,12 @@
 
         <v-btn right @click="importTxt">Firmar Archivo</v-btn>
       </form>
-
+      
+        <v-btn right @click="create">test</v-btn>
       {{ datas }}
-   
+  ----------
+  <p></p>
+  {{ res }} 
   
 </div>
 
@@ -26,7 +29,9 @@
     data() {
       return {
         chosenFile: null, // <- initialize the v-model prop
-        datas: null            
+        datas: null,
+        bas:"",
+        res:""            
       };
     },
     created: function(){
@@ -52,18 +57,44 @@
         reader.readAsText(this.chosenFile);
         reader.onload = () => {
           this.datas = reader.result;
-        }
-        axios({
-  url: 'http://172.16.214.73:8080/validarCertificado', //your url
+          axios({
+  url: 'http://172.16.214.73:8080/firmarCertificado', //your url
   method: 'POST',
   data:{
-  certificado:this.data,
+  certificado:btoa(this.datas),
 },
   //responseType: 'json', // important
-}).then(response => 
-console.log( response.data)
+}).then(response =>{ 
+this.res = response.data
+if(this.res.codigo=="000"){
+  let contenido=atob(response.data.firma)
+        let nombre ="certificadoFirmado.cert"
+        const a = document.createElement("a");
+        const archivo = new Blob([contenido], { type: 'text/cert' });
+        const url = URL.createObjectURL(archivo);
+        a.href = url;
+        a.download = nombre;
+        a.click();
+        URL.revokeObjectURL(url);
+}
+
+}
 );
-      }
+        }
+        
+
+      },
+      create(){
+        let contenido="asdfasdf"
+        let nombre ="asdfasdf"
+        const a = document.createElement("a");
+        const archivo = new Blob([contenido], { type: 'text/plain' });
+        const url = URL.createObjectURL(archivo);
+        a.href = url;
+        a.download = nombre;
+        a.click();
+        URL.revokeObjectURL(url);
+    }
     },
     
     

@@ -4,11 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _6962178e = () => interopDefault(import('../pages/FirmarForm.vue' /* webpackChunkName: "pages/FirmarForm" */))
 const _63af92ac = () => interopDefault(import('../pages/Form.vue' /* webpackChunkName: "pages/Form" */))
 const _15d7dc84 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _2f048152 = () => interopDefault(import('../pages/LoginForm.vue' /* webpackChunkName: "pages/LoginForm" */))
 const _b8bc8c06 = () => interopDefault(import('../pages/RegistroForm.vue' /* webpackChunkName: "pages/RegistroForm" */))
-const _73acd8e2 = () => interopDefault(import('../pages/ValForm.vue' /* webpackChunkName: "pages/ValForm" */))
+const _432c449b = () => interopDefault(import('../pages/ValidarForm.vue' /* webpackChunkName: "pages/ValidarForm" */))
 const _33e69a08 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -23,6 +24,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/FirmarForm",
+    component: _6962178e,
+    name: "FirmarForm"
+  }, {
     path: "/Form",
     component: _63af92ac,
     name: "Form"
@@ -39,9 +44,9 @@ export const routerOptions = {
     component: _b8bc8c06,
     name: "RegistroForm"
   }, {
-    path: "/ValForm",
-    component: _73acd8e2,
-    name: "ValForm"
+    path: "/ValidarForm",
+    component: _432c449b,
+    name: "ValidarForm"
   }, {
     path: "/",
     component: _33e69a08,

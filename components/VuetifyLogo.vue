@@ -1,11 +1,11 @@
 <template>
-  <img class="vuetify-logo" alt="Vuetify Logo" src="/vuetify-logo.svg" />
+  <img class="vuetify-logo" alt="Vuetify Logo" src="/cinves.png" />
 </template>
 
 <style>
 .vuetify-logo {
-  height: 180px;
-  width: 180px;
+  height: 300px;
+  width: 300px;
   transform: rotateY(560deg);
   animation: turn 3.5s ease-out forwards 1s;
 }

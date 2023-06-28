@@ -1,7 +1,18 @@
 <template>
   <div>
       <h1>Validar certificado</h1>
-      
+      <v-alert
+  border="bottom"
+  :color="color"
+  outlined
+  prominent
+  shaped
+  text
+  type="success"
+  v-show="alerta"
+>
+{{ this.mensaje }}
+</v-alert>
       <form @submit.prevent="Cargar()" enctype="multipart/form-data">
         <v-file-input
                 accept=".pem"
@@ -14,7 +25,7 @@
         <v-btn right @click="importTxt">Validar Archivo </v-btn>
       </form>
 
-      {{ datas }}
+      
    
   
 </div>
@@ -26,7 +37,11 @@
     data() {
       return {
         chosenFile: null, // <- initialize the v-model prop
-        datas: null            
+        datas: null,
+        res : "",
+        color:"orange",
+        mensaje:"",
+        alerta:false           
       };
     },
     created: function(){
@@ -57,14 +72,29 @@
   url: 'http://172.16.214.73:8080/validarCertificado', //your url
   method: 'POST',
   data:{
-  certificado:this.data,
+  certificado:btoa(this.data),
 },
   //responseType: 'json', // important
 }).then(response => 
-console.log( response.data)
+this.res = response.data
 );
       }
     },
+    watch:{
+      res : function(){
+        if(this.res.codigo!="000"){
+          this.alerta = true
+          this.color="red"
+          this.mensaje = this.res.descripcion
+        }else{
+          this.alerta = true
+          this.color="green"
+          this.mensaje = this.res.descripcion
+        }
+        
+      }
+
+    }
     
     
   };

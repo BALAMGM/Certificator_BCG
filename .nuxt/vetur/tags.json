@@ -1,4 +1,7 @@
 {
+  "Firmar": {
+    "description": "Auto imported from components/Firmar.vue"
+  },
   "FormCert": {
     "description": "Auto imported from components/FormCert.vue"
   },
@@ -14,8 +17,8 @@
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
   },
-  "ValidarForm": {
-    "description": "Auto imported from components/ValidarForm.vue"
+  "Validar": {
+    "description": "Auto imported from components/Validar.vue"
   },
   "VuetifyLogo": {
     "description": "Auto imported from components/VuetifyLogo.vue"
