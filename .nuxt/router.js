@@ -4,13 +4,13 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _6962178e = () => interopDefault(import('../pages/FirmarForm.vue' /* webpackChunkName: "pages/FirmarForm" */))
-const _63af92ac = () => interopDefault(import('../pages/Form.vue' /* webpackChunkName: "pages/Form" */))
-const _15d7dc84 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _2f048152 = () => interopDefault(import('../pages/LoginForm.vue' /* webpackChunkName: "pages/LoginForm" */))
-const _b8bc8c06 = () => interopDefault(import('../pages/RegistroForm.vue' /* webpackChunkName: "pages/RegistroForm" */))
-const _432c449b = () => interopDefault(import('../pages/ValidarForm.vue' /* webpackChunkName: "pages/ValidarForm" */))
-const _33e69a08 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _98f4e46c = () => interopDefault(import('../pages/FirmarForm.vue' /* webpackChunkName: "pages/FirmarForm" */))
+const _391cde0a = () => interopDefault(import('../pages/Form.vue' /* webpackChunkName: "pages/Form" */))
+const _38fd1493 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
+const _5195a0b4 = () => interopDefault(import('../pages/LoginForm.vue' /* webpackChunkName: "pages/LoginForm" */))
+const _5898334e = () => interopDefault(import('../pages/RegistroForm.vue' /* webpackChunkName: "pages/RegistroForm" */))
+const _61c8dd2a = () => interopDefault(import('../pages/ValidarForm.vue' /* webpackChunkName: "pages/ValidarForm" */))
+const _79eea2cb = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -25,31 +25,31 @@ export const routerOptions = {
 
   routes: [{
     path: "/FirmarForm",
-    component: _6962178e,
+    component: _98f4e46c,
     name: "FirmarForm"
   }, {
     path: "/Form",
-    component: _63af92ac,
+    component: _391cde0a,
     name: "Form"
   }, {
     path: "/inspire",
-    component: _15d7dc84,
+    component: _38fd1493,
     name: "inspire"
   }, {
     path: "/LoginForm",
-    component: _2f048152,
+    component: _5195a0b4,
     name: "LoginForm"
   }, {
     path: "/RegistroForm",
-    component: _b8bc8c06,
+    component: _5898334e,
     name: "RegistroForm"
   }, {
     path: "/ValidarForm",
-    component: _432c449b,
+    component: _61c8dd2a,
     name: "ValidarForm"
   }, {
     path: "/",
-    component: _33e69a08,
+    component: _79eea2cb,
     name: "index"
   }],
 

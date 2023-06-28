@@ -2,50 +2,50 @@
   {
     "name": "FirmarForm",
     "path": "/FirmarForm",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/FirmarForm.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/FirmarForm.vue",
     "chunkName": "pages/FirmarForm",
-    "_name": "_6962178e"
+    "_name": "_98f4e46c"
   },
   {
     "name": "Form",
     "path": "/Form",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/Form.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/Form.vue",
     "chunkName": "pages/Form",
-    "_name": "_63af92ac"
+    "_name": "_391cde0a"
   },
   {
     "name": "inspire",
     "path": "/inspire",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/inspire.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/inspire.vue",
     "chunkName": "pages/inspire",
-    "_name": "_15d7dc84"
+    "_name": "_38fd1493"
   },
   {
     "name": "LoginForm",
     "path": "/LoginForm",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/LoginForm.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/LoginForm.vue",
     "chunkName": "pages/LoginForm",
-    "_name": "_2f048152"
+    "_name": "_5195a0b4"
   },
   {
     "name": "RegistroForm",
     "path": "/RegistroForm",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/RegistroForm.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/RegistroForm.vue",
     "chunkName": "pages/RegistroForm",
-    "_name": "_b8bc8c06"
+    "_name": "_5898334e"
   },
   {
     "name": "ValidarForm",
     "path": "/ValidarForm",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/ValidarForm.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/ValidarForm.vue",
     "chunkName": "pages/ValidarForm",
-    "_name": "_432c449b"
+    "_name": "_61c8dd2a"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/retina15/NODEJS/Certificator_BCG/pages/index.vue",
+    "component": "/home/lokimenethill/nodejs/Certificator_BCG/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_33e69a08"
+    "_name": "_79eea2cb"
   }
 ]
